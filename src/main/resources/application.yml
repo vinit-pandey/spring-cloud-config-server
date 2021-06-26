@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/vinit-pandey/environment-variable-repo.git
+          default-label: main 
+          
+server:
+  port: ${port:8888}
